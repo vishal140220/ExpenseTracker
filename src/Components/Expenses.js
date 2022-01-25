@@ -4,7 +4,7 @@ import ExpenseItem from "./ExpenseItem";
 import "./Expenses.css";
 
 function Expenses(props) {
-	const [filteredYear, setFilteredYear] = useState("2021");
+	const [filteredYear, setFilteredYear] = useState("2022");
 	const filterChangeHandler = (selectedYear) => {
 		setFilteredYear(selectedYear);
 		console.log("expenses.js " + selectedYear);
@@ -13,7 +13,7 @@ function Expenses(props) {
 		return expense.date.getFullYear().toString() === filteredYear;
 	});
 	console.log(filteredExpenses);
-	let ExpenseContent = <p>No expenses found.</p>;
+	let ExpenseContent = <p className="no-expenses">No expenses found.</p>;
 	if (filteredExpenses.length > 0) {
 		ExpenseContent = filteredExpenses.map((expense) => (
 			<ExpenseItem
