@@ -20,8 +20,11 @@ function ExpenseItem(props) {
 				<h2>{title}</h2>
 				<div className="expense-item__price">{props.amount}</div>
 			</div>
-			<input onChange={changeTitleHandler}></input>
-			<button onClick={clickHandler}>Change Title</button>
+			<div className="change-wrapper">
+			<input className="title-change" 
+			onChange={changeTitleHandler}></input>
+			<button className="btn" onClick={clickHandler}>Change Title</button>
+			</div>
 		</Card>
 	);
 }

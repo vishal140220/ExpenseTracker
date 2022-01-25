@@ -5,7 +5,7 @@
 	/* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25); */
 	padding: 0.5rem;
 	margin: 1rem 0;
-	border-radius: 12px; 
+	border-radius: 12px;
 	background-color: #4b4b4b;
 }
 
@@ -18,7 +18,25 @@
 	justify-content: flex-start;
 	flex: 1;
 }
-
+.change-wrapper{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.title-change{
+	width: 100px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+}
+.btn {
+	height: 40px;
+	width: 80px;
+	border-radius: 10px;
+	background-color: #40005d;
+	color: white;
+}
 .expense-item h2 {
 	color: #3a3a3a;
 	font-size: 1rem;
